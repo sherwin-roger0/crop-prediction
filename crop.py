@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 classes = pd.read_excel("class.xlsx")
 
 # Load the stacking classifier model
-stacking_classifier = joblib.load('stacking_classifier_model.pkl')
+stacking_classifier = joblib.load('stacking_classifier_model.pkl', protocol=4)
 
 # Load the scaling parameters
 scaling_params = joblib.load('scaling_params.pkl')
